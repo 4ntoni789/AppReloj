@@ -1,0 +1,48 @@
+.contNavegacion {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+.contNavegacion__ico {
+  color: #fff;
+  font-size: 30px;
+  transition: color 0.5s;
+}
+.contNavegacion__ico:hover {
+  color: #69f;
+}
+.contNavegacion .active {
+  color: #69f;
+}
+
+.contCronometro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.contCronometro__cronometro {
+  font-size: 75px;
+  color: #fff;
+}
+.contCronometro__reset {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #69f;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+/*# sourceMappingURL=cronometro.css.map */

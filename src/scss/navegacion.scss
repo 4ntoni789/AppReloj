@@ -1,0 +1,21 @@
+$colorPrimario:#fff;
+$colorHoverHeader:#69f;
+.contNavegacion{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    &__ico{
+        color: $colorPrimario;
+        font-size: 30px;
+        transition: color .5s;
+        &:hover{
+            color:$colorHoverHeader ;
+        }
+    }
+    .active{
+        color: $colorHoverHeader;
+    }
+}

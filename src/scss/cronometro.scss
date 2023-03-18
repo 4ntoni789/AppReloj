@@ -1,0 +1,30 @@
+@use"navegacion";
+
+.contCronometro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    &__cronometro {
+        font-size: 75px;
+        color: #fff;
+    }
+
+    &__reset {
+        background-color: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 200px;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: navegacion.$colorHoverHeader;
+        cursor: pointer;
+        transition: color .5s;
+    }
+}

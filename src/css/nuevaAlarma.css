@@ -1,0 +1,129 @@
+.contNavegacion {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+.contNavegacion__ico {
+  color: #fff;
+  font-size: 30px;
+  transition: color 0.5s;
+}
+.contNavegacion__ico:hover {
+  color: #69f;
+}
+.contNavegacion .active {
+  color: #69f;
+}
+
+.contAlarmaNueva {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  transform: translateX(1370px);
+  transition: all 0.5s;
+}
+.contAlarmaNueva__active {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.contAlarmaNueva__active__nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.contAlarmaNueva__active__nav__icoCerrar {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.contAlarmaNueva__active__nav__icoCerrar:active {
+  color: #f00;
+}
+.contAlarmaNueva__active__nav__agg {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.contAlarmaNueva__active__nav__agg:active {
+  color: #69f;
+}
+.contAlarmaNueva__active__nav__subTitulo {
+  user-select: none;
+}
+.contAlarmaNueva__active__nav__subTitulo__titulo {
+  color: #fff;
+  text-align: center;
+}
+.contAlarmaNueva__active__nav__subTitulo__tituloAbajo {
+  color: #ccc;
+  text-align: center;
+}
+.contAlarmaNueva__active__controls {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  user-select: none;
+  justify-content: space-evenly;
+  margin-top: 30px !important;
+}
+.contAlarmaNueva__active__controls__inp1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+}
+.contAlarmaNueva__active__controls__mostrarHora {
+  margin: 20px 0 20px 0;
+}
+.contAlarmaNueva__active__controls__ico {
+  cursor: pointer;
+}
+.contAlarmaNueva__active__controls__check {
+  font-size: 50px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contAlarmaNueva__active__controls__check__inp {
+  display: none;
+}
+.contAlarmaNueva__active__controls__check__inp:checked ~ .contAlarmaNueva__active__controls__check__lbl {
+  color: #fff;
+}
+.contAlarmaNueva__active__controls__check__inp2 {
+  display: none;
+}
+.contAlarmaNueva__active__controls__check__inp2:checked ~ .contAlarmaNueva__active__controls__check__lbl2 {
+  color: #fff;
+}
+.contAlarmaNueva__active__controls__check__lbl {
+  color: #666;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.contAlarmaNueva__active__controls__check__lbl2 {
+  color: #666;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=nuevaAlarma.css.map */

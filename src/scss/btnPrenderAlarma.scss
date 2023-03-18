@@ -1,0 +1,38 @@
+@use"navegacion";
+
+.alarmaItem__contBtnCeck {
+    flex-grow: .5;
+
+    &__lblSwitch {
+        background-color: #ccc;
+        position: relative;
+        width: 55px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &__circle {
+            position: absolute;
+            background-color: #fff;
+            width: 25px;
+            height: 25px;
+            border-radius: 100px;
+            top: 2px;
+            left: 4px;
+            transition: all .5s;
+
+            &__active {
+                left: 10px;
+                position: absolute;
+                background-color: navegacion.$colorHoverHeader;
+                width: 25px;
+                height: 25px;
+                border-radius: 100px;
+                top: 2px;
+                left: 25px;
+                transition: all .5s;
+            }
+        }
+    }
+}

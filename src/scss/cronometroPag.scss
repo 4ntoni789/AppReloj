@@ -1,0 +1,58 @@
+@use"navegacion";
+
+.contCronometroPag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    animation: aparecer .5s forwards;
+
+    &__btnActivarCronometro {
+        background-color: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: navegacion.$colorHoverHeader;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:active {
+            background-color: #777;
+            transition: all .5s;
+        }
+    }
+
+    &__btnStop {
+        background-color: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: navegacion.$colorHoverHeader;
+        cursor: pointer;
+        transition: color .5s;
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}

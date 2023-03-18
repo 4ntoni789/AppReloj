@@ -1,0 +1,31 @@
+@use "navegacion";
+
+.contBtnMasAlarm {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btnMasAlarm {
+        width: 60px;
+        height: 60px;
+        background-color: #555;
+        color: navegacion.$colorHoverHeader;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+        z-index: 1000;
+        padding-left: 2px;
+        transition: background .2s;
+        &:active{
+            background-color: #fff;
+        }
+    }
+}

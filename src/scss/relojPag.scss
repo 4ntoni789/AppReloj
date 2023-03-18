@@ -1,0 +1,21 @@
+.relojIni {
+    user-select: none;
+    animation: aparecer .5s forwards;
+    &__contSubFecha {
+        color: #777;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}

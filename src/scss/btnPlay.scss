@@ -1,0 +1,16 @@
+@use"navegacion";
+.contCronometroPag__btnStop {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: navegacion.$colorHoverHeader;
+    cursor: pointer;
+    transition: color .5s;
+}

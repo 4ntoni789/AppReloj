@@ -1,0 +1,74 @@
+.contNavegacion {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+.contNavegacion__ico {
+  color: #fff;
+  font-size: 30px;
+  transition: color 0.5s;
+}
+.contNavegacion__ico:hover {
+  color: #69f;
+}
+.contNavegacion .active {
+  color: #69f;
+}
+
+.contCronometroPag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  animation: aparecer 0.5s forwards;
+}
+.contCronometroPag__btnActivarCronometro {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #69f;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.contCronometroPag__btnActivarCronometro:active {
+  background-color: #777;
+  transition: all 0.5s;
+}
+.contCronometroPag__btnStop {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #69f;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=cronometroPag.css.map */
